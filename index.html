@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <!-- box icons  -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -24,6 +25,8 @@
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
+            <a href="#project">Projects</a>
+            <a href="#resume">Resume</a>
             <a href="#education">Education</a>
             <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
@@ -49,9 +52,8 @@
                 <span class="animate" style="--i:4;"></span>
             </p>
             <div class="btn-box">
-                <a href="new.html" class="btn">Hire Me</a>
-                <a href="https://instagram.com/rohanmehra_007?igshid=NGExMmI2YTkyZg==" target="_blank" class="btn">Let's
-                    Talk</a>
+                <a href="#contact" class="btn">Hire Me</a>
+                <a href="/project-section.html" target="_blank" class="btn">My Work</a>
                 <span class="animate" style="--i:5;"></span>
             </div>
         </div>
@@ -93,15 +95,38 @@
     <!-- ----------------------------  Projects ----------------------------------------- -->
 
     <section id="project" class="project">
-        hello
+            <h2 class="heading">My <span>Projects</span></h2>
+            <div class="projects-container">
+                <div class="project-card" onclick="openProject('project1')">
+                    <div class="project-image" style="background-image: url('../images/Screenshot\ \(7\).png');"></div>
+                    <div class="project-content">
+                        <h3 style="text-align: center;">Project 1</h3>
+                    </div>
+                </div>
+                <div class="project-card" onclick="openProject('project1')">
+                    <div class="project-image" style="background-image: url('../images/Screenshot\ \(7\).png');"></div>
+                    <div class="project-content">
+                        <h3 style="text-align: center;">Project 1</h3>
+                    </div>
+                </div>
+                <div class="project-card" onclick="openProject('project1')">
+                    <div class="project-image" style="background-image: url('../images/Screenshot\ \(7\).png');"></div>
+                    <div class="project-content">
+                        <h3 style="text-align: center;">Project 1</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-box btns">
+                <a href="/project-section.html" class="btn">Explore Projects</a>
+            </div>
     </section>
 
 
     <!-- ------------------------------- Resume -------------------------------------- -->
 
-<section id="resume" class="resume">
-    resume
-</section>
+    <section id="resume" class="resume">
+        resume
+    </section>
 
     <!------------------------ eduucation details ------------------- -->
 
