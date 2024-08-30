@@ -28,6 +28,7 @@
             <a href="#project">Projects</a>
             <a href="#education">Education</a>
             <a href="#skills">Skills</a>
+            <a href="#certification">Certification</a>
             <a href="#contact">Contact</a>
 
             <span class="active-nav"></span>
@@ -102,19 +103,19 @@
             <div class="project-card" onclick="openProject('project1')">
                 <div class="project-image" style="background-image: url('images/Screenshot\ \(7\).png');"></div>
                 <div class="project-content">
-                    <h3 style="text-align: center;">Project 1</h3>
+                    <h3 style="text-align: center;">Portfolio Site</h3>
                 </div>
             </div>
             <div class="project-card" onclick="openProject('project1')">
-                <div class="project-image" style="background-image: url('images/Screenshot\ \(7\).png');"></div>
+                <div class="project-image" style="background-image: url('images/youtube.png');"></div>
                 <div class="project-content">
-                    <h3 style="text-align: center;">Project 1</h3>
+                    <h3 style="text-align: center;">Youtube Creater site</h3>
                 </div>
             </div>
             <div class="project-card" onclick="openProject('project1')">
-                <div class="project-image" style="background-image: url('images/Screenshot\ \(7\).png');"></div>
+                <div class="project-image" style="background-image: url('images/food.png');"></div>
                 <div class="project-content">
-                    <h3 style="text-align: center;">Project 1</h3>
+                    <h3 style="text-align: center;">Food Site</h3>
                 </div>
             </div>
         </div>
@@ -423,9 +424,9 @@
         </div>
     </section>
 
-    <!-- ----------------------------  Projects ----------------------------------------- -->
+    <!-- ----------------------------  certifications and workshops ----------------------------------------- -->
 
-    <section id="project" class="project">
+    <section id="certification" class="project">
         <h2 class="heading">My <span>Certifications</span> and<span> WorkShops</span></h2>
         <div class="projects-container">
             <div class="project-card" >
@@ -458,30 +459,31 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="#">
+        <form action="https://api.web3forms.com/submit" method="POST" onsubmit="reset();">
+            <input type="hidden" name="access_key" value="d9ab6d6a-7286-4ab6-bc55-6f6f106457a8">
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="Full Name" required>
+                    <input type="text" id="name" placeholder="Full Name" name="name" required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email Address" required>
+                    <input type="text" id="email" placeholder="Email Address" name="email" required>
                     <span class="focus"></span>
                 </div>
             </div>
             <div class="input-box">
                 <div class="input-field">
-                    <input type="number" placeholder="Mobile Number" required>
+                    <input type="number" id="mobile" placeholder="Mobile Number" name="mobile" required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email Subject" required>
+                    <input type="text" id="subject" placeholder="Email Subject" name="subject" required>
                     <span class="focus"></span>
                 </div>
             </div>
 
             <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <textarea name="" id="textarea" cols="30" rows="10" itemid="placeholder" placeholder="Your Message" name="textarea" required></textarea>
                 <span class="focus"></span>
             </div>
 
@@ -502,7 +504,10 @@
         </div>
     </footer>
 
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
     <script src="script.js"></script>
+    
 </body>
 
 </html>
